@@ -1,0 +1,120 @@
+/* ================= MOBILE RESPONSIVE ANIMATIONS ================= */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header {
+        animation-duration: 0.6s;
+    }
+
+    .logo {
+        animation-delay: 0.3s;
+    }
+
+    .navbar a {
+        animation-duration: 0.4s;
+    }
+
+    .navbar a:nth-child(1) {
+        animation-delay: 0.4s;
+    }
+
+    .navbar a:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+
+    .navbar a:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    .navbar a:nth-child(4) {
+        animation-delay: 0.7s;
+    }
+
+    .navbar a:nth-child(5) {
+        animation-delay: 0.8s;
+    }
+
+    .navbar a:nth-child(6) {
+        animation-delay: 0.9s;
+    }
+
+    .btn-cv {
+        animation-delay: 1s;
+    }
+
+    /* HERO */
+    .hero-left {
+        animation: slideTop 0.7s ease forwards;
+        animation-delay: 0.4s;
+    }
+
+    .hero-right h4 {
+        animation-delay: 0.6s;
+    }
+
+    .hero-right h1 {
+        animation-delay: 0.8s;
+    }
+
+    .hero-right h3 {
+        animation-delay: 1s;
+    }
+
+    .hero-right p {
+        animation-delay: 1.2s;
+    }
+
+    /* IMAGE FLOAT – softer on mobile */
+    .image-glow {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    /* SOCIAL ICONS */
+    .socials a {
+        animation-duration: 0.3s;
+    }
+
+    .socials a:nth-child(1) {
+        animation-delay: 1.3s;
+    }
+
+    .socials a:nth-child(2) {
+        animation-delay: 1.4s;
+    }
+
+    .socials a:nth-child(3) {
+        animation-delay: 1.5s;
+    }
+
+    .socials a:nth-child(4) {
+        animation-delay: 1.6s;
+    }
+
+    .hero-buttons {
+        animation-delay: 1.8s;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-left,
+    .hero-right h4,
+    .hero-right h1,
+    .hero-right h3,
+    .hero-right p {
+        animation-duration: 0.6s;
+    }
+
+    @keyframes slideTop {
+        from {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

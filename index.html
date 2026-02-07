@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="skills.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="contact.css" />
+
+    <!-- ICONS -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script>
+      emailjs.init({ publicKey: "dH5X0JGPjYbA8kIna" });
+    </script>
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <!-- <span class="code-symbol">&lt;/&gt;</span>
+      <div class="logo">Pradeep Yadav</div> -->
+
+      <div class="logo">
+        <span class="code-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Pradeep Yadav</span>
+      </div>
+
+      <nav class="navbar">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- <button  class="btn-cv">Download CV</button> -->
+
+      <details class="cv-wrapper">
+        <summary class="btn-cv">
+          Download CV <i class="bx bx-chevron-down"></i>
+        </summary>
+
+        <div class="cv-menu">
+          <a href="pradeepcv (1).pdf" target="_blank">👁 View CV</a>
+          <a href="pradeepcv (1).pdf" download>⬇ Download CV</a>
+        </div>
+      </details>
+
+      <!-- hamburger AS IT IS -->
+      <button class="hamburger" id="hamburger">
+        <i class="bx bx-menu"></i>
+      </button>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="hero-left">
+        <div class="about-img">
+          <img src="pradeep.jpg" alt="Profile Image" />
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <h4>Hello, I'm</h4>
+        <h1>Pradeep Yadav</h1>
+        <h3>And I'm a <span class="text">Web Developer</span></h3>
+
+        <p>
+          I am an enthusiastic Web Developer who loves designing and developing
+          modern websites. I have hands-on experience with frontend technologies
+          and basic backend concepts. I enjoy solving problems, learning new
+          tools, and building projects that help me grow as a developer.
+        </p>
+
+        <div class="socials">
+          <a href="#"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/p_yadav_907"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="#"><i class="bx bxl-gmail"></i></a>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn-primary">Hire Me</a>
+          <a href="#contact" class="btn-primary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="skills-section" id="skills">
+      <h1 class="skills-main-title">Skills</h1>
+
+      <div class="skills-grid">
+        <!-- LEFT COLUMN -->
+        <div class="skills-column">
+          <h2 class="skills-title">Programming Skills</h2>
+          <div class="skills-items">
+            <div class="skill-card">
+              <i class="devicon-java-plain colored"></i>
+              <span>Core Java</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <h2 class="skills-title">Frontend Technologies</h2>
+          <div class="skills-items">
+            <div class="skill-card">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-arrows-rotate"></i>
+              <span>AJAX</span>
+            </div>
+          </div>
+
+          <h2 class="skills-title">Databases</h2>
+          <div class="skills-items">
+            <div class="skill-card">
+              <i class="devicon-mysql-plain colored"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-mongodb-plain colored"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-microsoftsqlserver-plain colored"></i>
+              <span>MS SQL Server</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="skills-column">
+          <h2 class="skills-title">Frameworks</h2>
+          <div class="skills-items">
+            <div class="skill-card">
+              <i class="devicon-bootstrap-plain colored"></i>
+              <span>Bootstrap</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-react-original colored"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-angularjs-plain colored"></i>
+              <span>Angular</span>
+            </div>
+          </div>
+
+          <h2 class="skills-title">Tools</h2>
+          <div class="skills-items">
+            <div class="skill-card">
+              <i class="devicon-vscode-plain colored"></i>
+              <span>VS Code</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-git-plain colored"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-github-original"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-eclipse-plain colored"></i>
+              <span>Eclipse</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-intellij-plain colored"></i>
+              <span>IntelliJ IDEA</span>
+            </div>
+          </div>
+
+          <h2 class="skills-title">Backend Frameworks</h2>
+          <div class="skills-items">
+            <div class="skill-card">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-express-original"></i>
+              <span>Express.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="education" id="education">
+      <h1 class="skills-main-title">Education</h1>
+
+      <div class="edu-box">
+        <div class="edu-icon">
+          <i class="bx bxs-graduation"></i>
+        </div>
+        <div class="edu-content">
+          <h3>Undergraduate</h3>
+          <span>Currently Pursuing</span>
+          <p>University Institute of Technology, RGPV</p>
+          <p>CGPA: 7.36/10</p>
+        </div>
+      </div>
+
+      <div class="edu-box">
+        <div class="edu-icon">
+          <i class="bx bxs-school"></i>
+        </div>
+        <div class="edu-content">
+          <h3>Class 10th - MP Board</h3>
+          <span>Completed</span>
+          <p>Pragti Public High School, Jabalpur</p>
+        </div>
+      </div>
+
+      <div class="edu-box">
+        <div class="edu-icon">
+          <i class="bx bxs-school"></i>
+        </div>
+        <div class="edu-content">
+          <h3>Class 12th - MP Board</h3>
+          <span>Completed</span>
+          <p>Govt. Higher Secondary School</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+      <h1 class="skills-main-title">Contact Me</h1>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>pradeepyadav2595015@email.com</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="bx bx-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 8103943374</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Shukhsagar Medical College, Jabalpur, India</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="sendMail(event)">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+      <h1 class="skills-main-title">About</h1>
+
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            Hi, I'm <span class="name">Pradeep Yadav</span> – an aspiring
+            <span class="highlight">Software Engineer</span> and final-year
+            <span class="highlight">B.Tech</span> student at
+            <span class="highlight">BGIEM Jabalpur</span>. I love building
+            <span class="highlight">modern web applications</span> and solving
+            challenging problems with clean and efficient code. My passion lies
+            in
+            <span class="highlight"
+              >web development, algorithms, and creating seamless user
+              experiences</span
+            >.
+          </p>
+        </div>
+
+        <div class="about-img">
+          <img src="pradeep.jpg" alt="Pradeep Yadav" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Projects ================= -->
+    <section class="portfolio" id="portfolio">
+      <h1 class="skills-main-title">Projects</h1>
+      <div class="portfolio-container">
+        <div class="project-card">
+          <img src="screeshoot.png" alt="Project" />
+          <div class="project-layer">
+            <h4>Wonderlust</h4>
+            <p>Modern responsive personal FullStack website.</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="portfolio.png" alt="Project" />
+          <div class="project-layer">
+            <h4>Portfolio</h4>
+            <p>Clean landing page using HTML & CSS. JavaScript</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="sundown9.png" alt="Project" />
+          <div class="project-layer">
+            <h4>SunDown</h4>
+            <p>Clean landing page using HTML & CSS.</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="game.png" alt="Project" />
+          <div class="project-layer">
+            <h4>Snek Game</h4>
+            <p>Clean landing page using HTML & CSS javaScript</p>
+            <a href="https://pradeep-yadav-907.github.io/Snek-Game/"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="fit.png" alt="Project" />
+          <div class="project-layer">
+            <h4>The Fit</h4>
+            <p>Clean landing page using HTML & CSS.</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services" id="services">
+      <h1 class="skills-main-title">Services</h1>
+
+      <div class="services-container">
+        <div class="service-card">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>Modern, responsive and fast websites.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="bx bx-paint"></i>
+          <h3>UI / UX Design</h3>
+          <p>Clean and user-friendly designs.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="bx bx-mobile-alt"></i>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first layouts for all devices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2>Pradeep Yadav</h2>
+          <p>
+            FullStack / Web Developer<br />Building clean & modern web
+            experiences.
+          </p>
+        </div>
+        <div class="footer-right">
+          <h3>Follow Me</h3>
+          <div class="footer-social">
+            <a href=""><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.instagram.com/p_yadav_907"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="#"><i class="bx bxl-gmail"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Pradeep Yadav | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- ================= SCROLL + SECTION ANIMATION ================= -->
+
+    <script>
+      const header = document.querySelector(".header");
+      const sections = document.querySelectorAll("section");
+      const hamburger = document.getElementById("hamburger");
+      const navbar = document.querySelector(".navbar");
+
+      // hamburger toggle
+      hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+
+      // reveal + header function
+      function revealOnScroll() {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+
+        const triggerBottom = window.innerHeight * 0.85;
+
+        sections.forEach((section) => {
+          const sectionTop = section.getBoundingClientRect().top;
+          if (sectionTop < triggerBottom) {
+            section.classList.add("show");
+          }
+        });
+      }
+
+      // 🔥 run on page load (THIS FIXES YOUR PROBLEM)
+      window.addEventListener("load", revealOnScroll);
+
+      // run on scroll
+      window.addEventListener("scroll", revealOnScroll);
+    </script>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
