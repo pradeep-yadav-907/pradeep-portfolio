@@ -291,7 +291,7 @@ html {
     opacity: 0.8;
 }
 
-.socials a {
+/* .socials a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -310,6 +310,58 @@ html {
     background: #0ef;
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
+} */
+
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Default (Desktop) */
+.socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #0ef;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+/* 📱 Mobile Devices */
+@media (max-width: 768px) {
+    .socials {
+        justify-content: center;
+    }
+
+    .socials a {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+        margin-right: 0;
+    }
+}
+
+/* 📱 Small Mobile (Very Small Screens) */
+@media (max-width: 480px) {
+    .socials a {
+        width: 34px;
+        height: 34px;
+        font-size: 16px;
+        border-width: 1.5px;
+    }
 }
 
 .hero-buttons {
