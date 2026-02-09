@@ -70,3 +70,60 @@
     font-size: 20px;
     text-decoration: none;
 }
+
+/* ===== TABLET (<= 992px) ===== */
+@media (max-width: 992px) {
+    .portfolio {
+        padding: 80px 6%;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+/* ===== MOBILE (<= 768px) ===== */
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 60px 5%;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-layer h4 {
+        font-size: 20px;
+    }
+
+    .project-layer p {
+        font-size: 13px;
+    }
+
+    .project-layer a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* ===== SMALL MOBILE (<= 480px) ===== */
+@media (max-width: 480px) {
+    .portfolio {
+        padding: 50px 4%;
+    }
+
+    .project-layer {
+        padding: 15px;
+    }
+
+    .project-layer h4 {
+        font-size: 18px;
+    }
+
+    .project-layer p {
+        font-size: 12px;
+    }
+}
